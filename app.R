@@ -1,5 +1,6 @@
 library(shiny)
 library(ggplot2)
+library(scales)
 source("power_fun.R")
 
 ui <- fluidPage(

@@ -9,7 +9,7 @@ power_fun <- function(x, y, w, z, a){
     for (j in power_level) {
       test <- pwr.t.test(d = i, sig.level = a, power = j, type = "two.sample",
                          alternative = "two.sided")
-      row <- data.frame(d = i, power = j, n =test$n) 
+      row <- data.frame(d = i, power = j, n = test$n) 
       results.data <- rbind(results.data, row)
     }
   }
